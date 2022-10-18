@@ -25,6 +25,11 @@ footer {
 .footer__support-list li {
     margin-bottom: 0.75rem;
 }
+.support__list-link:hover{
+     margin-left: 0.2rem;
+     transition: 0.3s ease-in all;
+    color: red;
+}
 .footer__list a {
     text-decoration: none;
     color: unset;

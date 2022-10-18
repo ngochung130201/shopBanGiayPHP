@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../styles/header.css"> 
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/media.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,8 +31,8 @@
             <li><a href="#"><i class='bx bx-bell'>Thông báo</i></a></li>
             <li><a href="#"><i class='bx bx-question-mark' >Hỗ Trợ</i></a></li>
             <li><a href="#"><i class='bx bx-globe'>Ngôn Ngữ</i></a></li>
-            <li><a href="../page/register.html">Đăng Ký</a></li>
-            <li><a href="">Đăng Nhập</a></li>
+            <li><a href="../page/register.php">Đăng Ký</a></li>
+            <li><a href="../page/login.php">Đăng Nhập</a></li>
             </ul>
         </div>
         </div>
@@ -54,7 +56,6 @@
             </ul>
         </div>
     </header>
-    <section></section>
-    <footer></footer>
+  
 </body>
 </html>
