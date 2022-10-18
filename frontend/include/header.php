@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/frontend/styles/header.css"> 
+    <link rel="stylesheet" href="../styles/header.css"> 
     <title>Document</title>
 </head>
 <body>
@@ -29,13 +29,13 @@
             <li><a href="#"><i class='bx bx-bell'>Thông báo</i></a></li>
             <li><a href="#"><i class='bx bx-question-mark' >Hỗ Trợ</i></a></li>
             <li><a href="#"><i class='bx bx-globe'>Ngôn Ngữ</i></a></li>
-            <li><a href="#">Đăng Ký</a></li>
+            <li><a href="../page/register.html">Đăng Ký</a></li>
             <li><a href="">Đăng Nhập</a></li>
             </ul>
         </div>
         </div>
         <div class="header-mid">
-            <div class="header-mid-logo"><a href="#"><img src="/frontend/assets/img/shopee.png" alt=""></a></div>
+            <div class="header-mid-logo"><a href="#"><img src="../assets/img/shopee.png" alt=""></a></div>
             <div class="header-mid-search">
             <div class="header-mid-input"><input type="text" name="" id="" placeholder="Nhập"></div>
             <div class="header-mid-searchbutton"><button><i class='bx bx-search'></i></button></div>
