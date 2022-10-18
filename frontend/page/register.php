@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký ngay | Shop Giay</title>
-    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/auth.css">
 </head>
 <body>
     <div class="header__register">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="flex register__login">
                     <span>Bạn đã có tài khoản ?</span>
-                    <a href="">Đăng nhập</a>
+                    <a href="../page/login.php">Đăng nhập</a>
                 </div>
 
             </form>

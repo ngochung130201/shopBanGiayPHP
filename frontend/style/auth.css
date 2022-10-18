@@ -60,7 +60,7 @@
 .header__register-body .header__register_form {
     background-color: #ffff;
   
-    height: 25rem;
+ 
     width: 26rem;
 }
 .register >span {
@@ -178,5 +178,15 @@
     align-items: center;
     justify-content: center;
  
+}
+.login__dk {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.login__dk a {
+    color: #0055aa;
 }
 /* end Header login */

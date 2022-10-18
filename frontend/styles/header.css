@@ -4,6 +4,11 @@ header{
     background-color: #ffff;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+
    }
 ::placeholder{
     padding-left: 1rem;
