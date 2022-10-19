@@ -6,35 +6,7 @@
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Quản lý Danh mục</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Components</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
-
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>
-                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>
-                            <li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>
-                            <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
-                            <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
-                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
-                        </ul>
-                    </li>
+      
 
                     <li class="menu-title">Quản lý sản phẩm</li><!-- /.menu-title -->
 
@@ -48,31 +20,8 @@
                     <li>
                         <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
                     </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-                            <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-title">Quản lý cài đặt</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
-                        </ul>
-                    </li>
+              
+                    
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -192,115 +141,8 @@
         </header>
         <!-- /#header -->
         <!-- Content -->
-        <div class="content">
-            <!-- Animated -->
-            <div class="animated fadeIn">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">Sản phẩm</strong>
-                            </div>
-                            <div class="table-stats order-table ov-h">
-                                <table class="table ">
-                                    <thead>
-                                        <tr>
-                                            <th class="serial">#</th>
-                                            <th class="avatar">Avatar</th>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Product</th>
-                                            <th>Quantity</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="serial">1.</td>
-                                            <td class="avatar">
-                                                <div class="round-img">
-                                                    <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
-                                                </div>
-                                            </td>
-                                            <td> #5469 </td>
-                                            <td>  <span class="name">Louis Stanley</span> </td>
-                                            <td> <span class="product">iMax</span> </td>
-                                            <td><span class="count">231</span></td>
-                                            <td>
-                                            <button type="button" class="btn btn-success">Thêm</button>
-                                            <button type="button" class="btn btn-danger">Xóa</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="serial">2.</td>
-                                            <td class="avatar">
-                                                <div class="round-img">
-                                                    <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a>
-                                                </div>
-                                            </td>
-                                            <td> #5468 </td>
-                                            <td>  <span class="name">Gregory Dixon</span> </td>
-                                            <td> <span class="product">iPad</span> </td>
-                                            <td><span class="count">250</span></td>
-                                            <td>
-                                            <button type="button" class="btn btn-success">Thêm</button>
-                                            <button type="button" class="btn btn-danger">Xóa</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="serial">3.</td>
-                                            <td class="avatar">
-                                                <div class="round-img">
-                                                    <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a>
-                                                </div>
-                                            </td>
-                                            <td> #5467 </td>
-                                            <td>  <span class="name">Catherine Dixon</span> </td>
-                                            <td> <span class="product">SSD</span> </td>
-                                            <td><span class="count">250</span></td>
-                                            <td>
-                                            <button type="button" class="btn btn-success">Thêm</button>
-                                            <button type="button" class="btn btn-danger">Xóa</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="serial">4.</td>
-                                            <td class="avatar">
-                                                <div class="round-img">
-                                                    <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a>
-                                                </div>
-                                            </td>
-                                            <td> #5466 </td>
-                                            <td>  <span class="name">Mary Silva</span> </td>
-                                            <td> <span class="product">Magic Mouse</span> </td>
-                                            <td><span class="count">250</span></td>
-                                            <td>
-                                            <button type="button" class="btn btn-success">Thêm</button>
-                                            <button type="button" class="btn btn-danger">Xóa</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div> <!-- /.table-stats -->
-                        </div>
-                    </div>
-                  
-                </div>
-
-            </div>
-
-
-
-
-
-        </div>
-            <!-- .animated -->
-        </div>
-        <!-- /.content -->
-        <div class="clearfix"></div>
+      
         <!-- Footer -->
-      <?php 
-      include './include/footer.php';
-      ?>
+ 
         <!-- /.site-footer -->
     </div>
