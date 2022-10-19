@@ -3,6 +3,9 @@
 
 ?>
 <div class="container">
+    <?php
+    include '../include/slider.php'
+    ?>
     <div class="category">
     <div class="container__category">
         <h3>Danh mục</h3>
