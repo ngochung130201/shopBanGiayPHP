@@ -1,30 +1,43 @@
 <?php
-    session_start();
-    if(isset($_SESSION['email'])){
-        header('location:admin.php');
-    }
-    if( isset($_POST['dangnhap'])){
+session_start();
+if (isset($_SESSION['email'])) {
+    header('location:admin.php');
+}
+
+$conn = mysqli_connect('localhost', 'root', '', 'bangiay') or die ('Không
+thể kết nối tới database'.
+mysqli_connect_error());
+$sql = "SELECT * FROM account";
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result)!=0){
+while($row = mysqli_fetch_row($result)){
+  
+    if (isset($_POST['dangnhap'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-       if($email == 'admin@gmail.com' && $password == '123'){
-        // tao sesion
-        $_SESSION['email']= $email;
-        $_SESSION['password']= $password;
-          header('location:admin.php');
- 
-       }
-       else {
-        echo "Email hoặc mật khau sai !";
-        
-       }
+        if ($email ==$row[2] && md5($password )== $row[3]) {
+            // tao sesion
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            header('location:admin.php');
+        } else {
+            echo "Email hoặc mật khau sai !";
+        }
     }
+}
+}
+
+
 ?>
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,6 +61,7 @@
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
+
 <body class="bg-dark">
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
@@ -100,4 +114,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
