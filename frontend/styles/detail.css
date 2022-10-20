@@ -339,3 +339,28 @@ body{
 .body-left-detail-infomation span{
     color: #767676;
 }
+.body-description{
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    margin-top: 3rem;
+    height: 124rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-description-content{
+    padding: 15px 15px;
+}
+.body-description-title{ 
+    width: 71.875rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+.body-description-title span{
+    font-size: 2rem;
+}
+.body-description-detail{
+    padding-top: 2rem;
+}
