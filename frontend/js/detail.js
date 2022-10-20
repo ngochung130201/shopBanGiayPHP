@@ -23,3 +23,37 @@ function showSlide(n)
     }
     slides[slideindex-1].style.display = "block";
 }
+
+
+document.getElementById("increase").addEventListener("click",function()
+{   
+    let amount=parseInt(document.getElementById("number").value);
+    if(amount<0 || isNaN(amount))
+    {
+        amount=0;
+        document.getElementById("number").value=amount;
+    }
+    if(amount<99){
+        amount=amount+1
+        var textbox=document.getElementById("number")
+        textbox.value=amount;
+    }
+    if(amount>=99){
+        amount=99;
+        alert("Số lượng đạt đến giới hạn");
+        document.getElementById("number").value=amount;
+    }
+    
+})
+document.getElementById("decrease").addEventListener("click",function(){
+    let amount=parseInt(document.getElementById("number").value);
+    if(amount<=0 || isNaN(amount))
+    {
+        amount=0;
+        document.getElementById("number").value=amount;
+    }
+    else{
+        amount=amount-1;
+        document.getElementById("number").value=amount;
+    }
+})
