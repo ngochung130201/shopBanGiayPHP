@@ -4,10 +4,11 @@
     header("location:login.php");
     exit();
  };
-
-
 ?>
 
+<?php
+// include './backend/include/showproduct.php';
+?>
 <?php
 include './include/Header.php'
 ?>
