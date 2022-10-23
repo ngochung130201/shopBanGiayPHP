@@ -11,15 +11,11 @@
     <link rel="stylesheet" href="../styles/media.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/footer.css">
-<<<<<<< Updated upstream
+   
     <link rel="stylesheet" href="../styles/auth.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    
     <link rel="stylesheet" href="../styles/contact.css">
-=======
-    <link rel="stylesheet" href="../styles/detail.css">
-    <link rel="stylesheet" href="../styles/auth.css">
-    <link rel="stylesheet" href="../styles/detail.css">
->>>>>>> Stashed changes
+    <link rel="stylesheet" href="../styles/blog.css">
     <link
     rel="stylesheet"
     type="text/css"

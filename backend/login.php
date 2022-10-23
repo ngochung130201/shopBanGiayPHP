@@ -7,7 +7,7 @@ if (isset($_SESSION['email'])) {
 $conn = mysqli_connect('localhost', 'root', '', 'bangiay') or die ('Không
 thể kết nối tới database'.
 mysqli_connect_error());
-$sql = "SELECT * FROM product";
+$sql = "SELECT * FROM account";
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)!=0){
 while($row = mysqli_fetch_row($result)){
@@ -15,7 +15,7 @@ while($row = mysqli_fetch_row($result)){
     if (isset($_POST['dangnhap'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        if ($email ==$row[2] && md5($password )== $row[3] && $row[4]==1) {
+        if ($email ==$row[2] && md5($password)== $row[3] && $row[4]==1) {
             // tao sesion
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
@@ -71,36 +71,25 @@ while($row = mysqli_fetch_row($result)){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="./styles/main.css">
-=======
     <link rel="stylesheet" href="./styles/toast.css">
 
 
 
 
->>>>>>> Stashed changes
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 
-<<<<<<< Updated upstream
 <body class="bg-main">
-=======
-<body class="">
->>>>>>> Stashed changes
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-<<<<<<< Updated upstream
-                        <img class="align-content" src="../frontend/assets/img/logo.png" style="height: 100px;" alt="">
-=======
-                        <img class="align-content" src="images/logo.png" width="200px " alt="">
->>>>>>> Stashed changes
+                        <img class="align-content" src="../../frontend/assets/img/logo.png" width="200px " alt="">
                     </a>
                 </div>
                 <div class="login-form">

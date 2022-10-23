@@ -37,7 +37,20 @@
                                             </td>
                                         <td>
                                            
-                                        <img src="./images/product/<?php echo $row['Image']; ?>">
+                                        <img src="
+                                        <?php
+                                        if($row['Image']==null){
+                                            echo "./images/noimage.jpg";
+                                        }
+                                        else {
+                                            
+                                            echo "./images/product/" . $row['Image'] ;
+                                        }
+                                        
+                                        ?>
+                                        
+                                        
+                                        ">
                                         </td>
                                         <td><?php echo $row['Title'] ?></td>
                                         <td><?php echo $row['Price'] ?></td>
