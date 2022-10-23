@@ -7,7 +7,7 @@ if (isset($_SESSION['email'])) {
 $conn = mysqli_connect('localhost', 'root', '', 'bangiay') or die ('Không
 thể kết nối tới database'.
 mysqli_connect_error());
-$sql = "SELECT * FROM account";
+$sql = "SELECT * FROM product";
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)!=0){
 while($row = mysqli_fetch_row($result)){
@@ -15,15 +15,16 @@ while($row = mysqli_fetch_row($result)){
     if (isset($_POST['dangnhap'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        if ($email ==$row[2] && md5($password )== $row[3]) {
+        if ($email ==$row[2] && md5($password )== $row[3] && $row[4]==1) {
             // tao sesion
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
             header('location:admin.php');
         } else {
-            echo "Email hoặc mật khau sai !";
+            echo "<script>alert('Sai Email hoac mat khau');</script>";
         }
     }
+
 }
 }
 // $menu="SELECT * FROM product";
@@ -70,51 +71,73 @@ while($row = mysqli_fetch_row($result)){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
+<<<<<<< Updated upstream
+    <link rel="stylesheet" href="./styles/main.css">
+=======
+    <link rel="stylesheet" href="./styles/toast.css">
 
+
+
+
+>>>>>>> Stashed changes
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 
-<body class="bg-dark">
+<<<<<<< Updated upstream
+<body class="bg-main">
+=======
+<body class="">
+>>>>>>> Stashed changes
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="images/logo.png" alt="">
+<<<<<<< Updated upstream
+                        <img class="align-content" src="../frontend/assets/img/logo.png" style="height: 100px;" alt="">
+=======
+                        <img class="align-content" src="images/logo.png" width="200px " alt="">
+>>>>>>> Stashed changes
                     </a>
                 </div>
                 <div class="login-form">
                     <form action="login.php" method="POST">
                         <div class="form-group">
-                            <label>Email address</label>
+                            <label>Email</label>
                             <input name="email" type="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label>Password</label>
+                            <label>Mật khẩu</label>
                             <input name="password" type="password" class="form-control" placeholder="Password">
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input name="remember" type="checkbox"> Remember Me
+                                <input name="remember" type="checkbox"> Nhớ mật khẩu 
                             </label>
                             <label class="pull-right">
-                                <a href="#">Forgotten Password?</a>
+                                <a href="#">Quên mật khẩu?</a>
                             </label>
 
                         </div>
                         <button name="dangnhap" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Đăng nhập</button>
+                        <!-- <div class="container">
+  <button name="show" class="show">Đăng nhập</button>
+</div> -->
+
+<!-- <div class="toast jam" aria-hidden="true">
+  <span class="close" aria-role="button" tabindex="0">&times;</span>
+  Lightly toasted with jam.
+</div> -->
                         <div class="social-login-content">
                             <div class="social-button">
-                                <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Sign in with facebook</button>
-                                <button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-twitter"></i>Sign in with twitter</button>
+                                <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Đăng nhập với Facebook</button>
+                                <button type="button" class="btn social twitter btn-flat btn-addon mt-2"><i class="ti-google"></i>Đăng nhập với Google</button>
                             </div>
                         </div>
-                        <div class="register-link m-t-15 text-center">
-                            <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
-                        </div>
+                       
                     </form>
                 </div>
             </div>
@@ -125,6 +148,7 @@ while($row = mysqli_fetch_row($result)){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="./js/Toast.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

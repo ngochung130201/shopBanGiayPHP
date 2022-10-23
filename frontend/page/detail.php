@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    >
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../styles/detail.css">
-    <title>Document</title>
-</head>
-<body>
+<?php
+include '../include/header.php'
+?>
   <div class="body-container">
   <div class="body-side-detail">
   <div class="body-side-detail-content">
@@ -146,19 +133,9 @@
   </div>
 </div>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
-  <script src="../js/detail.js"></script>
-</body>
+<?php 
+include '../include/footer.php'
+?>
+  
+  </body>
 </html>

@@ -1,3 +1,4 @@
+
 <?php
  session_start();
  if(!isset($_SESSION['email'])){
@@ -20,10 +21,9 @@ include './include/Header.php'
     <!-- Left Panel -->
 
    <?php
-   include '../backend/view/sanpham/index.php'
+   include '../backend/index.php'
    ?>
     <!-- /#right-panel -->
-
     <!-- Scripts -->
   
         <?php 

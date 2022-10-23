@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="../styles/media.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../style/auth.css">
+<<<<<<< Updated upstream
+    <link rel="stylesheet" href="../styles/auth.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+=======
+    <link rel="stylesheet" href="../styles/detail.css">
+    <link rel="stylesheet" href="../styles/auth.css">
+    <link rel="stylesheet" href="../styles/detail.css">
+>>>>>>> Stashed changes
     <link
     rel="stylesheet"
     type="text/css"
@@ -27,7 +35,8 @@
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="../styles/slider.css">
-    <title>Document</title>
+    <link rel="icon" href="../assets/img/logo.png">
+    <title>AHP Shoes</title>
 </head>
 <body>
     <header>
@@ -46,16 +55,16 @@
         </div>
         <div class="header-top-button-2">
             <ul>
-            <li><a href="#"><i class='bx bx-bell'>Thông báo</i></a></li>
-            <li><a href="#"><i class='bx bx-question-mark' >Hỗ Trợ</i></a></li>
-            <li><a href="#"><i class='bx bx-globe'>Ngôn Ngữ</i></a></li>
+            <li><a href="../page/home.php"><i class='bx bx-home'> </i> Trang chủ</a></li>
+            <li><a href="../page/blog.php"><i class='bx bx-question-mark' ></i> Tin tức</a></li>
+            <li><a href="../page/contact.php"><i class='bx bxs-contact'></i></i> Liên hệ</a></li>
             <li><a href="../page/register.php">Đăng Ký</a></li>
             <li><a href="../page/login.php">Đăng Nhập</a></li>
             </ul>
         </div>
         </div>
         <div class="header-mid">
-            <div class="header-mid-logo"><a href="#"><img src="../assets/img/shopee.png" alt=""></a></div>
+            <div class="header-mid-logo"><a href="#"><img src="../assets/img/logo.png" alt=""></a></div>
             <div class="header-mid-search">
             <div class="header-mid-input"><input type="text" name="" id="" placeholder="Nhập"></div>
             <div class="header-mid-searchbutton"><button><i class='bx bx-search'></i></button></div>
@@ -74,6 +83,3 @@
             </ul>
         </div>
     </header>
-  
-</body>
-</html>

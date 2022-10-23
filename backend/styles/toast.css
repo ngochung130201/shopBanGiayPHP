@@ -1,0 +1,63 @@
+/* toast */
+.toast {
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 1.25em;
+    position: absolute;
+    right: 0;
+    top: 1em;
+    transition: 0.15s ease-in-out;
+    width: 325px;
+  }
+  
+
+  
+  .close {
+    cursor: pointer;
+    float: right;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-left: 1em;
+    opacity: .8;
+  }
+  
+  .jam {
+    background-color: #99004d;
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* general styling */
+
+  .show {
+    background-color: #fff;
+    border: 1px solid #0363c8;
+    border-radius: 3px;
+    color: #0363c8;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5em 1em;
+    text-transform: uppercase;
+  }
+  
+  .show:hover {
+    background-color: #0363c8;
+    color: #fff;
+  }
+  
+  

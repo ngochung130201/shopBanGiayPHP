@@ -28,6 +28,9 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Core Stylesheet -->
+
     </head>
 
 <body>
@@ -40,7 +43,7 @@
                     <li class="active">
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Tổng quan </a>
                     </li>
-                    <li class="menu-title">    <a href="backend/admin.php"><i class="menu-icon fa fa-laptop"></i>Sản phẩm </a></li><!-- /.menu-title -->
+                    <li class="menu-title">    <a href=""><i class="menu-icon fa fa-laptop"></i>Sản phẩm </a></li><!-- /.menu-title -->
       
 
                     <li class="menu-title">    <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Danh mục</a></li>
@@ -70,7 +73,7 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="./"><img src="images/logo.png" width="80px" alt="Logo"></a>
                     <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>

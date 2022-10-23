@@ -19,7 +19,7 @@ $link=__DIR__ ."images/";
 if(!empty($_FILES))
 {
     $img=$_FILES['img']['name'];
-    move_uploaded_file($_FILES["img"]["tmp_name"],$link.$_FILES["img"]["name"]);    
+    move_uploaded_file($_FILES["img"]["tmp_name"], "C:\\xampp\\htdocs\\img\\" .$_FILES["img"]["name"]);    
 }
 else
 $img=null;
