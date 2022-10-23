@@ -1,5 +1,4 @@
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<<<<<<< Updated upstream
    <script
    type="text/javascript"
    src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -16,7 +15,6 @@
  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" 
  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-=======
 <script
 type="text/javascript"
 src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -46,7 +44,6 @@ src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../js/detail.js"></script>
->>>>>>> Stashed changes
 <script src="../js/slider.js"></script> 
     <footer>
         <div class="footer__support">
