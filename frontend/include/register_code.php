@@ -30,4 +30,5 @@ else
     $error= "<span style='color:red'>Sai Thông Tin Đăng Ký</span>";
 }
 }
+//hehe
 ?>
