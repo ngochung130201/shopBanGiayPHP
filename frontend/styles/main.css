@@ -1,9 +1,11 @@
 /* Start category */
 .container {
+   
     padding-left: 10rem;
     padding-right: 10rem;
     background-color: #F5F5F5;
-
+    padding-top: 10rem;
+    
 
 }
 

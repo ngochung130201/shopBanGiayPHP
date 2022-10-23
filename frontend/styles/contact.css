@@ -1,0 +1,23 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.contact__form form .blog__input input{
+    display: block;
+    margin-bottom: 1rem;
+    width: 500px;
+}
+.blog__input input {
+    padding: 0.5rem 0.3rem;
+}
+.contact__submit {
+    border: none;
+    padding: 0.7rem 2rem;
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+}
+.blog__input textarea {
+    padding-left: unset !important;
+}
