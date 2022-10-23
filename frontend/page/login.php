@@ -1,3 +1,4 @@
+<?php include '../include/login_code.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +28,16 @@
             <span>Nền tản thương mại yêu thích Đông Nam Á</span>
         </div>
         <div class="header__register_form">
-            <form action="" class="register">
+            <form action="" class="register" method="POST">
                 <span>
                     Đăng nhập
                 </span>
                 <div class="register__input">
-                    <input type="text" class="register__input-phone" placeholder="Email" name="" id="">
-                    <input type="password" class="register__input-phone" placeholder="Mật khẩu" name="" id="">
-                    <input type="submit" class="register__input-next"  value="Đăng nhập">
+                    <input type="text" class="register__input-phone" placeholder="Email" name="email" id="">
+                    <input type="password" class="register__input-phone" placeholder="Mật khẩu" name="password" id="">
+                    <div><?php echo "$error" ?></div>
+                    <input type="submit" class="register__input-next" name="login" value="Đăng nhập">
+                    <span style="color:red ;"></span>
                 </div>
                 <div class="flex">
                     <div class="register__op">
@@ -60,7 +63,7 @@
                     <a href="">Đăng nhập với SMS</a>
                 </div>
                 <div class="flex register__login">
-                    <span>Bạn đã có tài khoản ?</span>
+                    <span>Bạn chưa có tài khoản ?</span>
                     <a href="../page/register.php">Đăng Ký</a>
                 </div>
 

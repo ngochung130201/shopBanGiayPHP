@@ -1,3 +1,6 @@
+<?php 
+include '../include/register_code.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,13 +30,16 @@
             <span>Nền tản thương mại yêu thích Đông Nam Á</span>
         </div>
         <div class="header__register_form">
-            <form action="" class="register">
+            <form action="" class="register" method="POST">
                 <span>
                     Đăng ký
                 </span>
                 <div class="register__input">
-                    <input type="number" class="register__input-phone" placeholder="Số điện thoại" name="" id="">
-                    <input type="submit" class="register__input-next"  value="Tiếp theo">
+                    <input type="text" class="register__input-phone" placeholder="Tên Người Dùng" name="username" id="">
+                    <input type="text" class="register__input-phone" placeholder="Email" name="email" id="">
+                    <input type="password" class="register__input-phone" placeholder="Password" name="password" id="">
+                    <div><?php echo "$error" ?></div>
+                    <input type="submit" class="register__input-next" name="register"  value="Đăng Ký">
                 </div>
                 <div class="flex">
                     <div class="register__op">
