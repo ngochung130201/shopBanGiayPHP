@@ -50,13 +50,13 @@ include './script/Script.php'
               $result = mysqli_query($conn, $sql);
                  while ($row = mysqli_fetch_assoc($result)){
                                         ?>
-                <div class="form-group"><label for="name" class=" form-control-label">Tên sản phẩm</label><input type="text" name="name" id="name" value="<?php ($row['Title']==null ? '0' :  $row['Title'])?>" placeholder="Nhập tên sản phẩm" class="form-control"></div>
-                <div class="form-group"><label for="price" class=" form-control-label">Giá sản phẩm</label><input type="text" id="price" name="price"  value="<?php ($row['price']==null ? '0' :  $row['price'])?>" placeholder="" class="form-control"></div>
-                <div class="form-group"><label for="conent" class=" form-control-label">Chi tiết ngắn</label><input type="text" id="conent" name="conent" value="<?php echo $row['conent'] ?>" placeholder="" class="form-control"></div>
-                <div class="form-group"><label for="description" class=" form-control-label">Chi tiết sản phẩm</label><input type="text" name="description" value="<?php echo $row['description'] ?>" id="description" placeholder="" class="form-control"></div>
-                <div class="form-group"><label for="pricenNew" class=" form-control-label">Giá mới</label><input type="text" id="pricenNew" name="pricenNew" value="<?php echo $row['pricenNew'] ?>" placeholder="" class="form-control"></div>
+                <div class="form-group"><label for="name" class=" form-control-label">Tên sản phẩm</label><input type="text" name="name" id="name" value="<?php echo $row['Title']?>" placeholder="Nhập tên sản phẩm" class="form-control"></div>
+                <div class="form-group"><label for="price" class=" form-control-label">Giá sản phẩm</label><input type="text" id="price" name="price"  value="<?php echo  $row['Price']?>" placeholder="" class="form-control"></div>
+                <div class="form-group"><label for="conent" class=" form-control-label">Chi tiết ngắn</label><input type="text" id="conent" name="conent" value="<?php echo $row['Content'] ?>" placeholder="" class="form-control"></div>
+                <div class="form-group"><label for="description" class=" form-control-label">Chi tiết sản phẩm</label><input type="text" name="description" value="<?php echo $row['Description'] ?>" id="description" placeholder="" class="form-control"></div>
+                <div class="form-group"><label for="pricenNew" class=" form-control-label">Giá mới</label><input type="text" id="pricenNew" name="pricenNew" value="<?php echo $row['PriceNew'] ?>" placeholder="" class="form-control"></div>
                
-                <div class="form-group"><label for="image" class=" form-control-label">Hình ảnh</label><input type="file" name="image" id="image"  value="<?php echo $row['image'] ?>"placeholder="image" class="form-control">
+                <div class="form-group"><label for="image" class=" form-control-label">Hình ảnh</label><input type="file" name="image" id="image"  value="<?php echo $row['Image'] ?>"placeholder="image" class="form-control">
                 <img width="200px" src="./images/product/<?php echo $row['Image']; ?>">
             
             </div>
