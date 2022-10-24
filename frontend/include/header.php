@@ -32,6 +32,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="../styles/slider.css">
     <link rel="icon" href="../assets/img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>AHP Shoes</title>
 </head>
 <body>
@@ -67,15 +69,5 @@
             </div>
             <div class="header-mid-cart"><a href="#"><i class='bx bx-cart'></i></a></div>
         </div>
-        <div class="header-bottom">
-            <ul>
-                <li><a href="#">Dép nữ</a></li>
-                <li><a href="#">Quần Jean Nam</a></li>
-                <li><a href="#">Áo</a></li>
-                <li><a href="#">Nước Hoa</a></li>
-                <li><a href="#">Áo Sweater</a></li>
-                <li><a href="#">Ví Nữ</a></li>
-                <li><a href="#">Đồng Hồ Thông Minh</a></li>
-            </ul>
-        </div>
+      
     </header>
