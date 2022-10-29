@@ -248,11 +248,7 @@
 <?php 
 include '../include/footer.php'
 
-<<<<<<< Updated upstream
-?>
-=======
 ?>
 <script>
   AOS.init();
 </script>
->>>>>>> Stashed changes
