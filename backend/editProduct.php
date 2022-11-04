@@ -46,7 +46,7 @@ include './script/Script.php'
                  include './db_product.php';
                      $id = $_GET['ID'];
 
-                   $sql = "SELECT * FROM `product` WHERE ID = $id LIMIT 1";
+                   $sql = "SELECT * FROM product WHERE ID = $id LIMIT 1";
               $result = mysqli_query($conn, $sql);
                  while ($row = mysqli_fetch_assoc($result)){
                                         ?>

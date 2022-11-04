@@ -9,14 +9,19 @@ if(isset($_POST['submit'])){
     $fileName = $_FILES['image']['name'];
     $template = $_FILES['image']['tmp_name'];
     $folder = "./images/category/" . $fileName;
-    $createDate = $_POST['createDate'];
-    $UpDate = $_POST['UpDate'];
-     $createDate = date("j- n- Y");;
-     $UpDate = date("j- n- Y");;
+     $createDate = date("Y-m-d H:i:s");
+     $UpDate = date("Y-m-d H:i:s");
 
-    $sql = "UPDATE `product` SET `ID`='$id',`Title`='$product_name',`Image`='$product_image',`Description`='$product_description',`Price`='$product_price',`PriceNew`='$product_pricenNew',`Content`='$product_conent' WHERE ID = '$id'";
+    $sql = "UPDATE `category` SET Title='$category_name',Image='$fileName',Content='$category_conent',CreateDate='$createDate',UpdateDate='$UpDate' WHERE ID = '$id'";
     $result = mysqli_query($conn,$sql);
-   
+    if(move_uploaded_file($template,$folder)){
+        echo "<script>
+        alert('uploaded file uploaded');
+        <script>";
+       }
+       else {
+        echo " co loi khi Upload  thanh cong";
+       }
     if($result){
        header("location:admin.php");
     }
@@ -47,27 +52,27 @@ include './script/Script.php'
             <?php 
                  include './db_product.php';
                      $id = $_GET['ID'];
-
-                   $sql = "SELECT * FROM `product` WHERE ID = $id LIMIT 1";
+                   $sql = "SELECT * FROM category WHERE ID = $id LIMIT 1";
               $result = mysqli_query($conn, $sql);
                  while ($row = mysqli_fetch_assoc($result)){
-                                        ?>
-                 <div class="form-group"><label for="name" class=" form-control-label">Tên danh mục</label><input type="text" name="name" id="name" placeholder="Nhập tên sản phẩm" class="form-control"></div>
+                                    ?>
+                 <div class="form-group"><label for="name" class=" form-control-label">Tên danh mục</label><input type="text" name="name" id="name" placeholder="Nhập tên sản phẩm" class="form-control" value="<?php echo $row['Title'] ?>"></div>
                  <div class="form-group"><label for="image" class=" form-control-label">Hình ảnh</label><input type="file" name="image" id="image" placeholder="image" class="form-control"></div>
-                 <div class="form-group"><label for="conent" class=" form-control-label">Hình ảnh</label><input type="file" name="conent" id="conent" placeholder="conent" class="form-control"></div>
+                 <div class="form-group"><label for="conent" class=" form-control-label">Content</label><input type="text" name="conent" id="conent" placeholder="conent" class="form-control"></div>
                  <div class="form-group"><label for="status" class=" form-control-label">Trạng thái </label><input type="checkbox" name="status" id="status"  class="form-control"></div>
                 <img width="200px" src="./images/category/<?php echo $row['Image']; ?>">
             
             </div>
+            
                 <?php
                    }
                     ?>
             </div>
-        </div>
-        <a class="btn btn-primary" href="#" role="button">Hủy</a>
-        <input class="btn btn-success" type="submit" name="submit" value="Tạo mới">
-    </form>
+            <a class="btn btn-primary" href="#" role="button">Hủy</a>
+          <input class="btn btn-success" type="submit" name="submit" value="Tạo mới">
+        </form>
     </div>
+        
 </div>
 
 <!-- /#right-panel -->
