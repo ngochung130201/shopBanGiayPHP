@@ -13,19 +13,19 @@
 <?php
 include './include/Header.php'
 ?>
-  <?php
+<?php
    include './script/Script.php'
-   ?>
+?>
   
 
     <!-- Left Panel -->
 
-   <?php
-   include '../backend/index.php'
-   ?>
+<?php
+include '../backend/index.php'
+?>
     <!-- /#right-panel -->
     <!-- Scripts -->
   
-        <?php 
-      include './include/footer.php';
-      ?>
+<?php 
+include './include/footer.php';
+?>

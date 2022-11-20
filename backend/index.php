@@ -11,18 +11,15 @@ include './include/Header.php'
                                 <strong class="card-title">Sản phẩm</strong>
                                 <a href="addProduct.php" type="button" class="btn text-white btn-success">Thêm</a>
                             </div>
-                            <div class="table-stats order-table ov-h">
-                        
+                            <div class="table-stats order-table ov-h">                      
                               <table class="table ">
                                     <thead>
                                         <tr>
-                                        
                                             <th class="serial"></th>
                                             <th class="avatar">Hình ảnh</th>
                                             <th>Tên sản phẩm</th>
                                             <th>Giá Cũ</th>                                 
                                             <th>Giá mới</th>
-                                       
                                             <th>Chức năng</th>
                                         </tr>
                                     </thead>
@@ -37,21 +34,16 @@ include './include/Header.php'
                                             <td>
                                             <input type="checkbox" >
                                             </td>
-                                        <td>
-                                           
+                                        <td>  
                                         <img src="
                                         <?php
                                         if($row['Image']==null){
                                             echo "./images/noimage.jpg";
                                         }
-                                        else {
-                                            
+                                        else {  
                                             echo "./images/product/" . $row['Image'] ;
-                                        }
-                                        
+                                        }              
                                         ?>
-                                        
-                                        
                                         ">
                                         </td>
                                         <td><?php echo $row['Title'] ?></td>
@@ -70,24 +62,14 @@ include './include/Header.php'
 
                                         <?php
                                        }
-                                       ?>
-                                     
-                                    
+                                       ?>   
                                     </tbody>
-                                </table>
-                         
+                                </table>                      
                             </div> 
                         </div>
-                    </div>
-                  
+                    </div>                  
                 </div>
-
             </div>
-
-
-
-
-
         </div>
             <!-- .animated -->
         </div>

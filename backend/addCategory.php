@@ -9,12 +9,10 @@ if(isset($_POST['submit'])){
     $fileName = $_FILES['image']['name'];
     $template = $_FILES['image']['tmp_name'];
     $folder = "./images/category/" . $fileName;
-    $createDate = $_POST['createDate'];
-    $UpDate = $_POST['UpDate'];
-     $createDate = date("j- n- Y");;
-     $UpDate = date("j- n- Y");;
+     $createDate = date('Y-m-d H:i:s');
+     $UpDate = date('Y-m-d H:i:s');
 
-    $sql = "INSERT INTO `category`(`ID`, `Image`, `Status`, `Content`, `CreateDate`, `UpdateDate`, `Title`) 
+    $sql = "INSERT INTO category(ID, Image, Status, Content, CreateDate, UpdateDate,Title) 
     VALUES (NULL,'$fileName','$category_status','$category_conent','$createDate','$UpDate','$category_name')";
     $result = mysqli_query($conn,$sql);
     if(move_uploaded_file($template,$folder)){
