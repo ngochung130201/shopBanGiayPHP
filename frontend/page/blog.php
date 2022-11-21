@@ -21,12 +21,13 @@ include 'db_connect.php';
         
             $result = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_assoc($result)) {
+                $id = $row['ID'];
                 $title = $row['Title'];
                 $img = $row['Image'];
                 $des = $row['Des'];
                 ?>
             <div class="blog__list">
-                <a href="#" class="blog__item">
+                <a href="/frontend/page/blog_detail?id=<?= $id ?>" class="blog__item">
                     <img src="<?= $img ?>" alt="" class="blog__img">
                     <span class="blog_title"><?= $title ?></span>
                     <p>
