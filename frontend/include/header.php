@@ -64,7 +64,7 @@
         <div class="header-mid">
             <div class="header-mid-logo"><a href="#"><img src="../assets/img/logo.png" alt=""></a></div>
             <div class="header-mid-search">
-            <div class="header-mid-input"><input type="text" name="" id="" placeholder="Nhập"></div>
+            <form class="header-mid-input" method="post" action="/frontend/page/search.php"><input type="text" name="search" id="" placeholder="Nhập"></form>
             <div class="header-mid-searchbutton"><button><i class='bx bx-search'></i></button></div>
             </div>
             <div class="header-mid-cart"><a href="#"><i class='bx bx-cart'></i></a></div>
