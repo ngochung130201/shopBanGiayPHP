@@ -8,6 +8,7 @@
     <title>Đăng ký ngay | Shop Giay</title>
     <link rel="stylesheet" href="../styles/auth.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../js/Toastr/toastr.min.css">
 </head>
 <body>
     <div class="header__register">

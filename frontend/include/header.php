@@ -53,7 +53,7 @@
         </div>
         <div class="header-top-button-2">
             <ul>
-            <li><a href="../page/home.php"><i class='bx bx-home'> </i> Trang chủ</a></li>
+            <li><a href="../page/index.php"><i class='bx bx-home'> </i> Trang chủ</a></li>
             <li><a href="../page/blog.php"><i class='bx bx-question-mark' ></i> Tin tức</a></li>
             <li><a href="../page/contact.php"><i class='bx bxs-contact'></i></i> Liên hệ</a></li>
             <li><a href="../page/register.php">Đăng Ký</a></li>
