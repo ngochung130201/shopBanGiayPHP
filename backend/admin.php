@@ -2,7 +2,7 @@
 <?php
  session_start();
  if(!isset($_SESSION['email'])){
-    header("location:login.php");
+    header("location:index.php");
     exit();
  };
 ?>
@@ -21,7 +21,7 @@ include './include/Header.php'
     <!-- Left Panel -->
 
 <?php
-include '../backend/index.php'
+include '../backend/indexMain.php'
 ?>
     <!-- /#right-panel -->
     <!-- Scripts -->
