@@ -42,10 +42,11 @@
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Tổng quan </a>
                     </li>
                     <li class="menu-title"><a href="index.php"><i class="menu-icon fa fa-laptop"></i>Sản phẩm </a></li><!-- /.menu-title -->
-                    <li class="menu-title"><a href="indexCategory.php"><i class="menu-icon fa fa-laptop"></i>Danh mục</a></li>
+                    <li class="menu-title"><a href="indexCategory.php"><i class="menu-icon fa fa-laptop"></i>Danh mục</a></li> 
+                    <li class="menu-title"><a href="indexBlog.php"><i class="menu-icon fa fa-laptop"></i>Tin tức</a></li> 
                     <li class="menu-title"><a href="indexCategory.php"><i class="menu-icon fa fa-laptop"></i>Giỏ hàng</a></li>
                     <li class="menu-title"><a href="indexCategory.php"><i class="menu-icon fa fa-laptop"></i>Cài đặt chung</a></li>
-                    <li class="menu-title"><a href="accout.php"><i class="menu-icon fa fa-laptop"></i>Tài khoản</a></li>        
+                    <li class="menu-title"><a href="accout.php"><i class="fas fa-tools"></i></i>Tài khoản</a></li>        
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
